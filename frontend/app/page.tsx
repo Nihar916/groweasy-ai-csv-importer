@@ -106,7 +106,7 @@ export default function Home() {
       const formData = new FormData();
       formData.append("file", file);
 
-     const response = await fetch("/api/backend/api/import", {
+     const response = await fetch("api/import", {
         method: "POST",
         body: formData,
       });
