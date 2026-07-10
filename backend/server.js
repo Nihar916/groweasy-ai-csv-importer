@@ -28,7 +28,7 @@ const ai = GEMINI_API_KEY
 app.use(cors());
 app.use(express.json());
 
-const uploadDirectory = path.join(__dirname, "uploads");
+const uploadDirectory = "/tmp/uploads";
 
 if (!fs.existsSync(uploadDirectory)) {
   fs.mkdirSync(uploadDirectory, {
