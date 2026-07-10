@@ -1044,7 +1044,7 @@ async function processRecordsInBatches(records) {
 }
 
 app.post(
-  "/api/backend/api/import",
+  "/api/import",
   upload.single("file"),
   async (req, res) => {
     let uploadedFilePath = null;
