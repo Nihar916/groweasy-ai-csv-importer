@@ -1171,25 +1171,27 @@ app.post(
   }
 );
 
-app.listen(PORT, () => {
-  console.log("");
-  console.log(
-    "======================================"
-  );
-  console.log("GrowEasy backend running");
-  console.log(
-    `Backend URL: http://localhost:${PORT}`
-  );
-  console.log(
-    "Gemini API key loaded:",
-    Boolean(GEMINI_API_KEY)
-  );
-  console.log(
-    "AI fallback protection: ENABLED"
-  );
-  console.log("CRM fields:", CRM_FIELDS.length);
-  console.log(
-    "======================================"
-  );
-  console.log("");
-});
+// app.listen(PORT, () => {
+//   console.log("");
+//   console.log(
+//     "======================================"
+//   );
+//   console.log("GrowEasy backend running");
+//   console.log(
+//     `Backend URL: http://localhost:${PORT}`
+//   );
+//   console.log(
+//     "Gemini API key loaded:",
+//     Boolean(GEMINI_API_KEY)
+//   );
+//   console.log(
+//     "AI fallback protection: ENABLED"
+//   );
+//   console.log("CRM fields:", CRM_FIELDS.length);
+//   console.log(
+//     "======================================"
+//   );
+//   console.log("");
+// });
+
+module.exports = app;
